@@ -1,0 +1,40 @@
+.header {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 1.2rem;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--text-main);
+        font-weight: 550;
+    }
+
+    &__nav {
+
+        ul {
+             display: flex;
+            gap: 4rem;
+            list-style-type: none;
+        }
+       
+    }
+
+    &__actions {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+}
+
+.header__actions img.search {
+  width: 20px;
+  height: 20px;
+}

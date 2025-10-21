@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {MatButtonModule} from '@angular/material/button';
-import { HeaderComponent } from "./shared/components/header/header.component";
+import { HeaderComponent } from './layout/components/header/header.component';
+
 
 @Component({
   selector: 'app-root',
