@@ -4,28 +4,40 @@ import {MatCardModule} from '@angular/material/card';
 import { ProductsService } from '../../../services/products.service';
 import { inject } from '@angular/core';
 import { ICard } from '../../../shared/models/card';
+import { ActivatedRoute } from '@angular/router';
+
+
+import { MatChipsModule } from '@angular/material/chips';
+import { CurrencyPipe } from '@angular/common';
+import { RouterLink } from "@angular/router";
+
+
+
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [MatCardModule, MatButtonModule],
+  imports: [MatCardModule, MatButtonModule, MatChipsModule, CurrencyPipe, RouterLink],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss'
 })
-export class CardComponent implements OnInit{
-    productsService = inject(ProductsService)
-    product = signal<ICard[]>([])
+export class CardComponent implements OnInit {
+  productService = inject(ProductsService)
+   route = inject(ActivatedRoute)
+  cardId: string | null = null
+  product = signal<ICard | null>(null)
 
-    ngOnInit(): void {
-      this.getProducts()
-    }
+  ngOnInit(): void {
+     this.cardId = this.route.snapshot.paramMap.get('id')
+     this.getProductById()
+  }
 
-    getProducts() {
-      this.productsService.getProducts().subscribe((res: ICard[]) => {
-        console.log(res)
-        this.product.set(res)
-      })
-    }
 
+  getProductById() {
+    this.productService.getProductById(this.cardId).subscribe((res: ICard) => {
+      console.log(res)
+      this.product.set(res)
+    })
+  }
   
 }

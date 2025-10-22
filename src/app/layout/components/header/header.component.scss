@@ -14,10 +14,42 @@
     &__nav {
 
         ul {
-             display: flex;
+            display: flex;
             gap: 4rem;
             list-style-type: none;
         }
+
+         li {
+            a {
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 0.9rem;
+                position: relative;
+                padding: 0.2rem 0;
+                transition: color 0.3s ease;
+
+              
+                &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -2px;
+                width: 0;
+                height: 2px;
+                background-color: #405dff; 
+                transition: width 0.3s ease;
+                }
+
+             
+                &:hover {
+                color: #405dff; 
+
+                &::after {
+                    width: 100%;
+                }
+                }
+            }
+            }
        
     }
 

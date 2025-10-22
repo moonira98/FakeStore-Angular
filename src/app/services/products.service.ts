@@ -14,6 +14,10 @@ export class ProductsService {
   constructor() { }
 
   getProducts(): Observable<ICard[]> {
-    return this.http.get<ICard[]>(`${this.apiUrl}/products`)
+    return this.http.get<ICard[]>(`${this.apiUrl}`)
+  }
+
+  getProductById (id: string | null):Observable<ICard> {
+      return this.http.get<ICard>(`${this.apiUrl}/${id}`)
   }
 }
