@@ -1,80 +1,70 @@
-.card {
-    margin: 0 auto;
-    padding: 3rem;
-    width: 1280px;
-
-    &__wrapper {
+.card { 
+    margin: 0 auto; 
+    padding: 3rem; 
+    width: 1280px; 
+    
+    
+    &__wrapper { 
         display: flex; 
-       justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-        &__example {
-         max-width: 300px;
-        background-color: #fff !important;
-        color: #000;
-        box-shadow: none;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-
-        img {
-            padding: 1rem;
-            height: 300px;
-        }
-
-        p {
-             margin-top: 15px;
-                font-size: 14px;
-                line-height: 1.4;
-                max-height: calc(1.4em * 3); /* 3 строки */
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-                      
-        }
-
-                mat-card-title {
-                    font-size: 16px;
-                    font-weight: 600;
-                    line-height: 1.4;
-                    max-height: calc(1.4em * 2); /* 2 строки */
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 2;
-                    -webkit-box-orient: vertical;
-                    
-                }
-
-                mat-card-actions {
-                display: flex;
-                gap: 10px;
-                margin-top: 15PX;
-
-                mat-chip {
-                    font-size: 14px;
-                    padding: 0 10px;
-                    height: 32px;
-                }
-            }
-
-    }
-
-    &__example:hover {
-        transform: scale(1);
-        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-        z-index: 10; 
-    }
-}
-
-
-
-
-
-.example-header-image {
-  background-image: url('https://material.angular.dev/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}
+        justify-content: space-between; 
+        flex-wrap: wrap; gap: 15px; 
+    } 
+    
+    &__example { 
+        max-width: 300px; 
+        background-color: #fff !important; 
+        color: #000; 
+        box-shadow: none; 
+        border: 1px solid #ddd; 
+        border-radius: 10px; 
+        
+        img { 
+            height: 300px; 
+        
+        } 
+        
+        p { 
+            margin-top: 15px; 
+            font-size: 14px; 
+            line-height: 1.4; 
+            max-height: calc(1.4em * 3); /* 3 строки */ 
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+            display: -webkit-box;
+             -webkit-line-clamp: 3; 
+             -webkit-box-orient: vertical; 
+            
+            } 
+            
+            mat-card-title { 
+                font-size: 16px; 
+                font-weight: 600; 
+                line-height: 1.4; 
+                max-height: calc(1.4em * 2); /* 2 строки */ 
+                overflow: hidden; 
+                text-overflow: ellipsis; 
+                display: -webkit-box; 
+                -webkit-line-clamp: 2; 
+                -webkit-box-orient: vertical; 
+            } 
+            
+            mat-card-actions { 
+                display: flex; 
+                gap: 10px; 
+                margin-top: 15PX; 
+                
+            mat-chip { 
+                font-size: 14px; 
+                padding: 0 10px; 
+                height: 32px; 
+            } 
+        } 
+    } 
+    
+    &__example:hover { 
+        transform: scale(1); 
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
+        z-index: 10; } 
+    } 
+        
+        

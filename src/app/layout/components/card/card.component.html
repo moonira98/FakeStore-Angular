@@ -1,1 +1,28 @@
+  <div class="card">
+    <div class="card__wrapper">
+      @if(product()) {
+         <mat-card class="card__example" appearance="outlined" >
+          
+                    <img mat-card-image [src]="product()?.image" alt="Photo of a Shiba Inu">
+                    <mat-card-header>
+                    <mat-card-title>{{product()?.title}}</mat-card-title>
+                    </mat-card-header>
+                    
+                    <mat-card-content>
+                        <p>
+                        {{product()?.description}}
+                        </p>
+                    </mat-card-content>
+                   <mat-card-actions>
+                        <mat-chip color="primary" selected>{{ product()?.price| currency }}</mat-chip>
+                         <mat-chip color="accent" selected>Добавить в корзину</mat-chip>
+                        </mat-card-actions>
+            </mat-card>
+      }
+                 
+        
   
+
+    </div>
+</div>
+

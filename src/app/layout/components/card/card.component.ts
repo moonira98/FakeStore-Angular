@@ -17,7 +17,7 @@ import { RouterLink } from "@angular/router";
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [MatCardModule, MatButtonModule, MatChipsModule, CurrencyPipe, RouterLink],
+  imports: [MatCardModule, MatButtonModule, MatChipsModule, CurrencyPipe, RouterLink, MatButtonModule],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss'
 })
