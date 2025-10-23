@@ -31,4 +31,8 @@ export class HomeComponent implements OnInit {
       })
     }
 
+    addToBucket(prod: ICard) {
+    prod.present=!prod.present
+    }
+
 }

@@ -5,4 +5,5 @@ export interface ICard {
   description: string
   category: string
   image: string
+  present: boolean
 }

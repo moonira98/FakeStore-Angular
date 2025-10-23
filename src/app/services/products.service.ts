@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { ICard } from '../shared/models/card';
 import { Observable } from 'rxjs';
-import { environment } from '../../environments/environment.prod';
+import { environment } from '../../environments/environment.dev';
 
 @Injectable({
   providedIn: 'root'
@@ -20,4 +20,5 @@ export class ProductsService {
   getProductById (id: string | null):Observable<ICard> {
       return this.http.get<ICard>(`${this.apiUrl}/${id}`)
   }
+
 }
