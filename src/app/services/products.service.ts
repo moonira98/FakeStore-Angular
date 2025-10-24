@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { ICard } from '../shared/models/card';
+import { IProduct } from '../shared/models/card';
 import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment.dev';
 
@@ -13,12 +13,12 @@ export class ProductsService {
 
   constructor() { }
 
-  getProducts(): Observable<ICard[]> {
-    return this.http.get<ICard[]>(`${this.apiUrl}`)
+  getProducts(): Observable<IProduct[]> {
+    return this.http.get<IProduct[]>(`${this.apiUrl}`)
   }
 
-  getProductById (id: string | null):Observable<ICard> {
-      return this.http.get<ICard>(`${this.apiUrl}/${id}`)
+  getProductById (id: string | null):Observable<IProduct> {
+      return this.http.get<IProduct>(`${this.apiUrl}/${id}`)
   }
 
 }

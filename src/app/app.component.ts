@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
-import { HeaderComponent } from './layout/components/header/header.component';
-import { CardComponent } from './shared/ui-components/card/card.component';
+import { HeaderComponent } from './layout/header/header.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MatButtonModule, HeaderComponent, CardComponent],
+  imports: [RouterOutlet, MatButtonModule, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

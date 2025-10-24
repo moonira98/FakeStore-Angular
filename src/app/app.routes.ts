@@ -1,8 +1,7 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './layout/components/home/home.component';
-import { CardComponent } from './shared/ui-components/card/card.component';
+import { ProductsComponent } from './features/products/products.component';
+
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'product/:id', component: CardComponent },
+  { path: '', component: ProductsComponent },
 ];
