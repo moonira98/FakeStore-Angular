@@ -29,7 +29,7 @@
         <mat-chip color="primary" selected>
           {{ price | currency }}
         </mat-chip>
-        <mat-chip color="primary" selected>
+        <mat-chip color="primary" selected (click)="onAddToBucket()">
           Добавить в корзину
         </mat-chip>
       }

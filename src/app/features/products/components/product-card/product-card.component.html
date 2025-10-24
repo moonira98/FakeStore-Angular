@@ -6,6 +6,7 @@
       [price]="product.price"
       [rate]="product.rate"
       [routerLink]="['/product', product.id]"
+      (addToBucket)="addProductToBucket(product)"
     ></app-ui-card>
   }
   

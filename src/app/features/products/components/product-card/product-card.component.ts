@@ -1,4 +1,4 @@
-import { Component, Input} from '@angular/core';
+import { Component, Input, signal} from '@angular/core';
 import { IProduct } from '../../../../shared/models/card';
 import { UiCardComponent } from '../../../../shared/ui-components/ui-card/ui-card.component';
 import { RouterLink } from "@angular/router";
@@ -12,5 +12,11 @@ import { RouterLink } from "@angular/router";
 })
 export class ProductCardComponent {
     @Input() product!: IProduct
+    bucketProducts = signal<IProduct[]>([])
   
+
+    addProductToBucket(product: IProduct) {
+      this.bucketProducts.update(current => [...current, product]);
+      console.log(this.bucketProducts())
+      }
 }

@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
-import { Input } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
+import { Input, Output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
 import { CurrencyPipe } from '@angular/common';
+
 
 
 @Component({
@@ -26,4 +27,10 @@ export class UiCardComponent {
   @Input() category?: string;
   @Input() image?: string;
   @Input() rate?: number; 
+
+  @Output() addToBucket = new EventEmitter<void>()
+
+  onAddToBucket() {
+    this.addToBucket.emit()
+  }
 }
