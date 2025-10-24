@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Ультракомфортная хлопковая футболка",
+      "price": 29.99,
+      "description": "Мягкая и дышащая футболка из 100% хлопка. Идеальна для повседневного ношения.",
+      "category": "clothing",
+      "image": "assets/images/futbolka.jpg",
+      "rate": 4.6
+    },
+    {
+      "id": 2,
+      "title": "Беспроводные наушники NoiseFree X2",
+      "price": 99.99,
+      "description": "Компактные наушники с активным шумоподавлением и 24-часовым временем работы.",
+      "category": "electronics",
+      "image": "assets/images/naushniki.webp",
+      "rate": 4.8
+    },
+    {
+      "id": 3,
+      "title": "Женская сумка из эко-кожи",
+      "price": 54.5,
+      "description": "Стильная сумка среднего размера с отделением для ноутбука. Выполнена из мягкой эко-кожи.",
+      "category": "accessories",
+      "image": "assets/images/sumka.jpg",
+      "rate": 4.5
+    },
+    {
+      "id": 4,
+      "title": "Смарт-часы FitPro S4",
+      "price": 79.99,
+      "description": "Многофункциональные часы с мониторингом пульса, сна и шагомером. Водонепроницаемые.",
+      "category": "electronics",
+      "image": "assets/images/chasi.jfif",
+      "rate": 4.3
+    },
+    {
+      "id": 5,
+      "title": "Кроссовки AirFlex Run",
+      "price": 89.99,
+      "description": "Легкие и удобные кроссовки для бега. Поддержка стопы и отличная вентиляция.",
+      "category": "shoes",
+      "image": "assets/images/krossi.jfif",
+      "rate": 4.7
+    },
+    {
+      "id": 6,
+      "title": "Джинсы Classic Fit",
+      "price": 49.99,
+      "description": "Классические джинсы прямого кроя. Плотный деним, удобная посадка.",
+      "category": "clothing",
+      "image": "assets/images/bryuki.jfif",
+      "rate": 4.4
+    },
+    {
+      "id": 7,
+      "title": "Рюкзак TravelGo 25L",
+      "price": 59.99,
+      "description": "Прочный рюкзак с множеством отделений. Подходит для путешествий и города.",
+      "category": "accessories",
+      "image": "assets/images/ryukzak.jfif",
+      "rate": 4.6
+    },
+    {
+      "id": 8,
+      "title": "Настольная лампа Lumos Touch",
+      "price": 39.99,
+      "description": "Современная лампа с сенсорным управлением и тремя уровнями яркости. Энергоэффективный LED-свет.",
+      "category": "home",
+      "image": "assets/images/lampa.jfif",
+      "rate": 4.2
+    }
+  ]
+}

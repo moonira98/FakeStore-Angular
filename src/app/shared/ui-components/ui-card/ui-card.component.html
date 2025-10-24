@@ -1,41 +1,38 @@
-
-
-      <mat-card
-        class="card__example"
-        appearance="outlined"
-      >
-        @if (image) {
-          <img mat-card-image [src]="image" [alt]="title || 'Card image'" />
-        }
+<mat-card class="card__example" appearance="outlined">
+    @if (image) {
+      <img mat-card-image [src]="image" [alt]="title || 'Card image'" />
+    }
   
-        @if (title || subtitle) {
-          <mat-card-header>
-            @if (title) {
-              <mat-card-title>{{ title }}</mat-card-title>
-            }
-            @if (subtitle) {
-              <mat-card-subtitle>{{ subtitle }}</mat-card-subtitle>
-            }
-          </mat-card-header>
-        }
-  
-        @if (description) {
-          <mat-card-content>
-            <p>{{ description }}</p>
-          </mat-card-content>
-        }
-  
-        <mat-card-actions>
-          @if (price) {
-            <mat-chip color="primary" selected>
-              {{ price | currency }}
-            </mat-chip>
+    @if (title) {
+      <mat-card-header>
+        <div class="header-content">
+          @if (title) {
+            <mat-card-title>{{ title }}</mat-card-title>
           }
+        </div>
+      </mat-card-header>
+    }
   
-          <!-- Дополнительные действия (кастомные кнопки и т.п.) -->
-          <ng-content select="[card-actions]"></ng-content>
-        </mat-card-actions>
-      </mat-card>
-
-
+    @if (description || rate) {
+      <mat-card-content>
+        @if (description) {
+          <p>{{ description }}</p>
+        }
+        @if (rate) {
+          <span>⭐ {{ rate }}/5</span>
+        }
+      </mat-card-content>
+    }
+  
+    <mat-card-actions>
+      @if (price) {
+        <mat-chip color="primary" selected>
+          {{ price | currency }}
+        </mat-chip>
+        <mat-chip color="primary" selected>
+          Добавить в корзину
+        </mat-chip>
+      }
+    </mat-card-actions>
+  </mat-card>
   

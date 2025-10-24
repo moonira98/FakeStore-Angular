@@ -9,7 +9,8 @@ import { CurrencyPipe } from '@angular/common';
 @Component({
   selector: 'app-ui-card',
   standalone: true,
-  imports: [  MatCardModule,
+  imports: [  
+    MatCardModule,
     MatButtonModule,
     MatChipsModule,
     CurrencyPipe,
@@ -18,11 +19,11 @@ import { CurrencyPipe } from '@angular/common';
   styleUrl: './ui-card.component.scss'
 })
 export class UiCardComponent {
-  @Input() image?: string;
-  @Input() title?: string;
-  @Input() subtitle?: string;
-  @Input() description?: string;
-  @Input() price?: number;
-  @Input() link?: string; // например, для перехода
 
+  @Input() title?: string;
+  @Input() price?: number;
+  @Input() description?: string;
+  @Input() category?: string;
+  @Input() image?: string;
+  @Input() rate?: number; 
 }
