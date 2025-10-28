@@ -4,12 +4,13 @@ import { ProductsService } from '../../../../services/products.service';
 import { ActivatedRoute } from '@angular/router';
 import { signal } from '@angular/core';
 import { IProduct } from '../../../../shared/models/card';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @Component({
   selector: 'app-product-details',
   standalone: true,
-  imports: [],
+  imports: [MatTabsModule],
   templateUrl: './product-details.component.html',
   styleUrl: './product-details.component.scss'
 })
