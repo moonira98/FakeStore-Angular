@@ -25,7 +25,7 @@ export class UiCardComponent {
   @Input() price?: number;
   @Input() description?: string;
   @Input() category?: string;
-  @Input() image?: string;
+  @Input() image?: string[];
   @Input() rate?: number; 
 
   @Output() addToBucket = new EventEmitter<void>()

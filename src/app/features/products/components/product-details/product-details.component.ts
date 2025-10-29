@@ -19,6 +19,7 @@ export class ProductDetailsComponent {
   route = inject(ActivatedRoute)
   productId = signal<null | string>(null)
   productSingle = signal<IProduct | null>(null)
+  counter = signal<number>(0)
 
  ngOnInit() {
   this.productId.set(this.route.snapshot.paramMap.get('id'))
@@ -31,6 +32,15 @@ export class ProductDetailsComponent {
     this.productSingle.set(res)
     console.log(this.productSingle())
   })
+ }
+
+ increment() {
+  this.counter.update(counter => counter + 1)
+ }
+
+ decrement() {
+  if (this.counter() <= 0) return;
+  this.counter.update(counter => counter - 1)
  }
 
 }

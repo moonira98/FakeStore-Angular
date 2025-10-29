@@ -9,12 +9,19 @@
                         <ul>
                             <li><a>Laptops</a></li>
                             <li><a>Smart Phones</a></li>
-                            <li><a>Monitors</a></li>
+                            <li><a>Monitors</a></li>`
                         </ul>
                 </nav>
                 <div class="product-detail__actions">
                     <p>On Sale from <strong>$3,299.00</strong> </p>
-                    <input type="number" placeholder="1">
+                    <div class="product-detail__input">
+                        <div>{{counter()}}</div>
+                        <div class="product-detail__input-images">
+                            <img (click)="increment()" src="/assets/images/arrow-up.png" >
+                            <img (click)="decrement()"  src="/assets/images/arrow-down.png"  
+                             [class.disabled]="counter() === 0" >
+                        </div>
+                    </div>
                     
                     <button>Add to cart</button>
                     <button class="second-button">
@@ -22,14 +29,21 @@
                     </button>
                 </div>
             </div>
+            
             <div class="product-detail__content">
-                <div class="product-detail__image">
-                    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
-                    <mat-tab label="First"><img src='/assets/images/msi.png'></mat-tab>
-                    <mat-tab label="Second">Content 2</mat-tab>
-                    <mat-tab label="Third">Content 3</mat-tab>
-                    </mat-tab-group>
-                </div>
+                 
+                    <div class="product-detail__image">
+                        <button>
+                            <img src="/assets/images/arrow-up.png">
+                        </button>
+                        
+                       
+                        <button>
+                            <img src="/assets/images/arrow-down.png" >
+                        </button>
+                    </div>
+                
+              
                 <div class="product-detail__info">
                 
                     <h2>MSI MPG Trident 3</h2>
@@ -43,7 +57,7 @@
                         <div class="product-detail__circle third-circle"></div>
                     </div>
                     <div class="product-detail__contacts">
-
+                        <p>Have a Question? <a href="#">Contact us</a> </p>
                     </div>
 
                 </div>

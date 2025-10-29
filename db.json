@@ -6,7 +6,7 @@
       "price": 29.99,
       "description": "Мягкая и дышащая футболка из 100% хлопка. Идеальна для повседневного ношения.",
       "category": "clothing",
-      "image": "assets/images/futbolka.jpg",
+      "image": ["assets/images/futbolka.jpg", "assets/images/naushniki.webp", "assets/images/watch.jpg"],
       "rate": 4.6,
       "be": false
     },
