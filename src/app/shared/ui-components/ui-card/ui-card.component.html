@@ -1,6 +1,6 @@
 <mat-card class="card__example" appearance="outlined">
     @if (image) {
-      <img mat-card-image [src]="image" [alt]="title || 'Card image'" />
+      <img mat-card-image [src]="image[0]" [alt]="title || 'Card image'" />
     }
   
     @if (title) {
@@ -29,7 +29,7 @@
         <mat-chip color="primary" selected>
           {{ price | currency }}
         </mat-chip>
-        <mat-chip color="primary" selected (click)="onAddToBucket()">
+        <mat-chip class="green-chip" color="primary" selected (click)="onAddToBucket()">
           Добавить в корзину
         </mat-chip>
       }

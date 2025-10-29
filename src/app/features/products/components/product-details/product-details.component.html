@@ -9,7 +9,7 @@
                         <ul>
                             <li><a>Laptops</a></li>
                             <li><a>Smart Phones</a></li>
-                            <li><a>Monitors</a></li>`
+                            <li><a>Monitors</a></li>
                         </ul>
                 </nav>
                 <div class="product-detail__actions">
@@ -32,14 +32,16 @@
             
             <div class="product-detail__content">
                  
-                    <div class="product-detail__image">
-                        <button>
-                            <img src="/assets/images/arrow-up.png">
+                    <div class="product-detail__image-container">
+                        <button (click)="prevImage()">
                         </button>
-                        
+                        <div class="product-detail__image-box">
+                            <img [src]="currentImage">
+                        </div>
+                    
                        
-                        <button>
-                            <img src="/assets/images/arrow-down.png" >
+                        <button (click)="nextImage()">
+                         
                         </button>
                     </div>
                 

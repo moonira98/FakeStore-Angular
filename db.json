@@ -6,7 +6,7 @@
       "price": 29.99,
       "description": "Мягкая и дышащая футболка из 100% хлопка. Идеальна для повседневного ношения.",
       "category": "clothing",
-      "image": ["assets/images/futbolka.jpg", "assets/images/naushniki.webp", "assets/images/watch.jpg"],
+      "image": ["/assets/images/msi.png", "assets/images/msi-white.jfif", "assets/images/msi-double.png"],
       "rate": 4.6,
       "be": false
     },
@@ -16,7 +16,7 @@
       "price": 99.99,
       "description": "Компактные наушники с активным шумоподавлением и 24-часовым временем работы.",
       "category": "electronics",
-      "image": "assets/images/naushniki.webp",
+      "image": ["assets/images/display.jfif", "assets/images/display-white.png"],
       "rate": 4.8
     },
     {
@@ -25,7 +25,7 @@
       "price": 54.5,
       "description": "Стильная сумка среднего размера с отделением для ноутбука. Выполнена из мягкой эко-кожи.",
       "category": "accessories",
-      "image": "assets/images/sumka.jpg",
+      "image": ["assets/images/cool-display.png", "assets/images/cool-display2.png"],
       "rate": 4.5
     },
     {
@@ -34,7 +34,7 @@
       "price": 79.99,
       "description": "Многофункциональные часы с мониторингом пульса, сна и шагомером. Водонепроницаемые.",
       "category": "electronics",
-      "image": "assets/images/watch.jpg",
+      "image": ["assets/images/nout.png", "assets/images/nout-green.png"],
       "rate": 4.3
     },
     {

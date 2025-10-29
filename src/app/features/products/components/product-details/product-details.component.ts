@@ -20,6 +20,8 @@ export class ProductDetailsComponent {
   productId = signal<null | string>(null)
   productSingle = signal<IProduct | null>(null)
   counter = signal<number>(0)
+  currentImageIndex = signal<number>(0)
+  
 
  ngOnInit() {
   this.productId.set(this.route.snapshot.paramMap.get('id'))
@@ -42,5 +44,24 @@ export class ProductDetailsComponent {
   if (this.counter() <= 0) return;
   this.counter.update(counter => counter - 1)
  }
+
+ nextImage() {
+  const images = this.productSingle()!.image
+    if(!this.productSingle()?.image) return
+
+   this.currentImageIndex.set((this.currentImageIndex() + 1) % images.length)
+ }
+
+ prevImage() {
+   const images = this.productSingle()!.image
+    if(!this.productSingle()?.image) return
+ this.currentImageIndex.set(
+    (this.currentImageIndex()! - 1 + images.length) % images.length
+  );
+ }
+
+  get currentImage(): string {
+    return this.productSingle()!.image[this.currentImageIndex()] || '';
+  }
 
 }
