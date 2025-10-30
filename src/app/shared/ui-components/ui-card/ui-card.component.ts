@@ -21,12 +21,12 @@ import { CurrencyPipe } from '@angular/common';
 })
 export class UiCardComponent {
 
-  @Input() title?: string;
-  @Input() price?: number;
+  @Input() title!: string;
+  @Input() price!: number;
   @Input() description?: string;
   @Input() category?: string;
-  @Input() image?: string[];
-  @Input() rate?: number; 
+  @Input() image!: string[];
+  @Input() rate!: number; 
 
   @Output() addToBucket = new EventEmitter<void>()
 

@@ -5,12 +5,13 @@ import { ActivatedRoute } from '@angular/router';
 import { signal } from '@angular/core';
 import { IProduct } from '../../../../shared/models/card';
 import {MatTabsModule} from '@angular/material/tabs';
+import { BreadcrumbsComponent } from '../../../../layout/breadcrumbs/breadcrumbs.component';
 
 
 @Component({
   selector: 'app-product-details',
   standalone: true,
-  imports: [MatTabsModule],
+  imports: [MatTabsModule, BreadcrumbsComponent],
   templateUrl: './product-details.component.html',
   styleUrl: './product-details.component.scss'
 })

@@ -21,4 +21,8 @@ export class ProductsService {
       return this.http.get<IProduct>(`${this.apiUrl}/${id}`)
   }
 
+
+
+
+
 }

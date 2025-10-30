@@ -1,38 +1,32 @@
 <mat-card class="card__example" appearance="outlined">
-    @if (image) {
-      <img mat-card-image [src]="image[0]" [alt]="title || 'Card image'" />
-    }
-  
-    @if (title) {
-      <mat-card-header>
-        <div class="header-content">
-          @if (title) {
-            <mat-card-title>{{ title }}</mat-card-title>
-          }
-        </div>
+    <img mat-card-image [src]="image[0]" [alt]="title || 'Card image'" />
+    
+    <mat-card-header>
+      <mat-card-title>{{ title }}</mat-card-title>
+      <div class="rating">
+        @for (star of [1, 2, 3, 4, 5]; track $index) {
+          <span class="star" [class.filled]="$index < rate">★</span>
+        }
+        <span class="rate-text">({{ rate }}/5)</span>
+      </div>
       </mat-card-header>
-    }
+    
   
-    @if (description || rate) {
       <mat-card-content>
         @if (description) {
           <p>{{ description }}</p>
         }
-        @if (rate) {
-          <span>⭐ {{ rate }}/5</span>
-        }
-      </mat-card-content>
-    }
+       </mat-card-content>
+    
   
     <mat-card-actions>
-      @if (price) {
-        <mat-chip color="primary" selected>
+       <mat-chip class="green-chip" selected>
           {{ price | currency }}
         </mat-chip>
-        <mat-chip class="green-chip" color="primary" selected (click)="onAddToBucket()">
+        <mat-chip class="red-chip"  selected (click)="onAddToBucket()">
           Добавить в корзину
         </mat-chip>
-      }
+      
     </mat-card-actions>
   </mat-card>
   

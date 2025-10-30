@@ -1,0 +1,38 @@
+.breadcrumb { display: flex; list-style: none; padding: 0; margin: 0; }
+.breadcrumb-item + .breadcrumb-item::before { content: ">"; padding: 0 8px; color: gray; }
+.breadcrumb-item.active a { pointer-events: none; color: black; }
+
+nav {
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    position: relative;
+    padding: 0.2rem 0;
+    transition: color 0.3s ease;
+    color: black;
+
+  
+    &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #405dff; 
+    transition: width 0.3s ease;
+    }
+
+ 
+    &:hover {
+    color: #405dff; 
+
+    &::after {
+        width: 100%;
+    }
+    }
+}

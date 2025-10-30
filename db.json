@@ -2,9 +2,9 @@
   "products": [
     {
       "id": 1,
-      "title": "Ультракомфортная хлопковая футболка",
+      "title": "MSI MPG Trident 3",
       "price": 29.99,
-      "description": "Мягкая и дышащая футболка из 100% хлопка. Идеальна для повседневного ношения.",
+      "description": "MSI MPG Trident 3 10SC-005AU Intel i7 10700F, 2060 SUPER, 16GB RAM, 512GB SSD, 2TB HDD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty Gaming Desktop",
       "category": "clothing",
       "image": ["/assets/images/msi.png", "assets/images/msi-white.jfif", "assets/images/msi-double.png"],
       "rate": 4.6,
@@ -12,65 +12,65 @@
     },
     {
       "id": 2,
-      "title": "Беспроводные наушники NoiseFree X2",
+      "title": "Display NoiseFree X2",
       "price": 99.99,
-      "description": "Компактные наушники с активным шумоподавлением и 24-часовым временем работы.",
+      "description": "MSI MPG Trident 3 10SC-005AU Intel i7 10700F, 2060 SUPER, 16GB RAM, 512GB SSD, 2TB HDD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty Gaming Desktop",
       "category": "electronics",
       "image": ["assets/images/display.jfif", "assets/images/display-white.png"],
       "rate": 4.8
     },
     {
       "id": 3,
-      "title": "Женская сумка из эко-кожи",
+      "title": "Display nano",
       "price": 54.5,
-      "description": "Стильная сумка среднего размера с отделением для ноутбука. Выполнена из мягкой эко-кожи.",
+      "description": "MSI MPG Trident 3 10SC-005AU Intel i7 10700F, 2060 SUPER, 16GB RAM, 512GB SSD, 2TB HDD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty Gaming Desktop",
       "category": "accessories",
       "image": ["assets/images/cool-display.png", "assets/images/cool-display2.png"],
       "rate": 4.5
     },
     {
       "id": 4,
-      "title": "Смарт-часы FitPro S4",
+      "title": "Notebook",
       "price": 79.99,
-      "description": "Многофункциональные часы с мониторингом пульса, сна и шагомером. Водонепроницаемые.",
+      "description": "MSI MPG Trident 3 10SC-005AU Intel i7 10700F, 2060 SUPER, 16GB RAM, 512GB SSD, 2TB HDD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty Gaming Desktop",
       "category": "electronics",
       "image": ["assets/images/nout.png", "assets/images/nout-green.png"],
       "rate": 4.3
     },
     {
       "id": 5,
-      "title": "Кроссовки AirFlex Run",
+      "title": "Monitor",
       "price": 89.99,
-      "description": "Легкие и удобные кроссовки для бега. Поддержка стопы и отличная вентиляция.",
+      "description": "MSI MPG Trident 3 10SC-005AU Intel i7 10700F, 2060 SUPER, 16GB RAM, 512GB SSD, 2TB HDD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty Gaming Desktop",
       "category": "shoes",
-      "image": "assets/images/krossi.jfif",
+      "image": ["/assets/images/msi.png", "assets/images/msi-white.jfif", "assets/images/msi-double.png"],
       "rate": 4.7
     },
     {
       "id": 6,
-      "title": "Джинсы Classic Fit",
+      "title": "Monitor",
       "price": 49.99,
-      "description": "Классические джинсы прямого кроя. Плотный деним, удобная посадка.",
+      "description": "MSI MPG Trident 3 10SC-005AU Intel i7 10700F, 2060 SUPER, 16GB RAM, 512GB SSD, 2TB HDD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty Gaming Desktop",
       "category": "clothing",
-      "image": "assets/images/bryuki.jfif",
+      "image": ["assets/images/monitor.png","assets/images/monitor-dragon.png" ],
       "rate": 4.4
     },
     {
       "id": 7,
-      "title": "Рюкзак TravelGo 25L",
+      "title": "Monitor",
       "price": 59.99,
       "description": "Прочный рюкзак с множеством отделений. Подходит для путешествий и города.",
       "category": "accessories",
-      "image": "assets/images/ryukzak.jfif",
+      "image": ["assets/images/monitor.png","assets/images/monitor-dragon.png" ],
       "rate": 4.6
     },
     {
       "id": 8,
-      "title": "Настольная лампа Lumos Touch",
+      "title": "Monitor",
       "price": 39.99,
       "description": "Современная лампа с сенсорным управлением и тремя уровнями яркости. Энергоэффективный LED-свет.",
       "category": "home",
-      "image": "assets/images/lampa.jfif",
+      "image": ["assets/images/monitor.png","assets/images/monitor-dragon.png" ],
       "rate": 4.2
     }
   ]

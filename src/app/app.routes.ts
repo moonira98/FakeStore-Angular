@@ -4,7 +4,7 @@ import { ProductDetailsComponent } from './features/products/components/product-
 
 
 export const routes: Routes = [
-  { path: '', component: ProductsComponent },
-  {path: 'product/:id', component: ProductDetailsComponent}
+  { path: '', component: ProductsComponent, data: { breadcrumb: 'Продукты' } },
+  { path: 'product/:id', component: ProductDetailsComponent, data: { breadcrumb: 'Детали продукта' } },
  
 ];

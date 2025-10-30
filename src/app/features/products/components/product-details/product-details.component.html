@@ -1,4 +1,4 @@
-{{productSingle()?.id}}
+
 
     <div class="product-detail__wrapper">
         <div class="product-detail">
@@ -6,11 +6,7 @@
             <div class="product-detail__header">
                 <nav class="product-detail__nav">
                     
-                        <ul>
-                            <li><a>Laptops</a></li>
-                            <li><a>Smart Phones</a></li>
-                            <li><a>Monitors</a></li>
-                        </ul>
+                    <app-breadcrumb></app-breadcrumb>
                 </nav>
                 <div class="product-detail__actions">
                     <p>On Sale from <strong>$3,299.00</strong> </p>
@@ -34,14 +30,14 @@
                  
                     <div class="product-detail__image-container">
                         <button (click)="prevImage()">
+                            <img src="/assets/images/arrow-left2.png">
                         </button>
-                        <div class="product-detail__image-box">
+                   
                             <img [src]="currentImage">
-                        </div>
                     
                        
                         <button (click)="nextImage()">
-                         
+                            <img src="/assets/images/arrow-right.jpg">
                         </button>
                     </div>
                 
