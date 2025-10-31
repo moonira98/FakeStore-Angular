@@ -17,11 +17,14 @@ export class ProductsService {
     return this.http.get<IProduct[]>(`${this.apiUrl}`)
   }
 
-  getProductById (id: string | null):Observable<IProduct> {
+  getProductById (id: number):Observable<IProduct> {
       return this.http.get<IProduct>(`${this.apiUrl}/${id}`)
   }
 
 
+  changeProduct(product: IProduct) {
+    return this.http.put<IProduct>(`${this.apiUrl}/${product.id}`, product);
+  }
 
 
 

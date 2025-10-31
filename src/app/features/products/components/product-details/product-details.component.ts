@@ -18,14 +18,15 @@ import { BreadcrumbsComponent } from '../../../../layout/breadcrumbs/breadcrumbs
 export class ProductDetailsComponent {
   productsService = inject(ProductsService)
   route = inject(ActivatedRoute)
-  productId = signal<null | string>(null)
+  productId = signal<number>(0)
   productSingle = signal<IProduct | null>(null)
   counter = signal<number>(0)
   currentImageIndex = signal<number>(0)
   
 
  ngOnInit() {
-  this.productId.set(this.route.snapshot.paramMap.get('id'))
+  this.productId.set(Number(this.route.snapshot.paramMap.get('id')));
+
   this.getProductById()
  }
 

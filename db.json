@@ -17,7 +17,8 @@
       "description": "MSI MPG Trident 3 10SC-005AU Intel i7 10700F, 2060 SUPER, 16GB RAM, 512GB SSD, 2TB HDD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty Gaming Desktop",
       "category": "electronics",
       "image": ["assets/images/display.jfif", "assets/images/display-white.png"],
-      "rate": 4.8
+      "rate": 4.8,
+      "be": false
     },
     {
       "id": 3,
@@ -26,7 +27,8 @@
       "description": "MSI MPG Trident 3 10SC-005AU Intel i7 10700F, 2060 SUPER, 16GB RAM, 512GB SSD, 2TB HDD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty Gaming Desktop",
       "category": "accessories",
       "image": ["assets/images/cool-display.png", "assets/images/cool-display2.png"],
-      "rate": 4.5
+      "rate": 4.5,
+      "be": false
     },
     {
       "id": 4,
@@ -35,7 +37,8 @@
       "description": "MSI MPG Trident 3 10SC-005AU Intel i7 10700F, 2060 SUPER, 16GB RAM, 512GB SSD, 2TB HDD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty Gaming Desktop",
       "category": "electronics",
       "image": ["assets/images/nout.png", "assets/images/nout-green.png"],
-      "rate": 4.3
+      "rate": 4.3,
+      "be": false
     },
     {
       "id": 5,
@@ -44,7 +47,8 @@
       "description": "MSI MPG Trident 3 10SC-005AU Intel i7 10700F, 2060 SUPER, 16GB RAM, 512GB SSD, 2TB HDD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty Gaming Desktop",
       "category": "shoes",
       "image": ["/assets/images/msi.png", "assets/images/msi-white.jfif", "assets/images/msi-double.png"],
-      "rate": 4.7
+      "rate": 4.7,
+      "be": false
     },
     {
       "id": 6,
@@ -53,7 +57,8 @@
       "description": "MSI MPG Trident 3 10SC-005AU Intel i7 10700F, 2060 SUPER, 16GB RAM, 512GB SSD, 2TB HDD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty Gaming Desktop",
       "category": "clothing",
       "image": ["assets/images/monitor.png","assets/images/monitor-dragon.png" ],
-      "rate": 4.4
+      "rate": 4.4,
+      "be": false
     },
     {
       "id": 7,
@@ -62,7 +67,8 @@
       "description": "Прочный рюкзак с множеством отделений. Подходит для путешествий и города.",
       "category": "accessories",
       "image": ["assets/images/monitor.png","assets/images/monitor-dragon.png" ],
-      "rate": 4.6
+      "rate": 4.6,
+      "be": false
     },
     {
       "id": 8,
@@ -71,7 +77,8 @@
       "description": "Современная лампа с сенсорным управлением и тремя уровнями яркости. Энергоэффективный LED-свет.",
       "category": "home",
       "image": ["assets/images/monitor.png","assets/images/monitor-dragon.png" ],
-      "rate": 4.2
+      "rate": 4.2,
+      "be": false
     }
   ]
 }

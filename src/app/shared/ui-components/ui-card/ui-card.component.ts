@@ -20,17 +20,20 @@ import { CurrencyPipe } from '@angular/common';
   styleUrl: './ui-card.component.scss'
 })
 export class UiCardComponent {
-
+  @Input() id! : number
   @Input() title!: string;
   @Input() price!: number;
   @Input() description?: string;
   @Input() category?: string;
   @Input() image!: string[];
   @Input() rate!: number; 
+  @Input() be!: boolean
 
   @Output() addToBucket = new EventEmitter<void>()
 
   onAddToBucket() {
     this.addToBucket.emit()
   }
+
+  
 }

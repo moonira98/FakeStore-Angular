@@ -30,7 +30,7 @@ export class BreadcrumbsComponent {
     }
 
     if (urlParts[1]) {
-      const id = urlParts[1];
+      const id = +urlParts[1];
       this.productService.getProductById(id).subscribe(product => {
         const breadcrumbs: { label: string, url: string }[] = [];
         breadcrumbs.push({ label: 'Products', url: '/products' });
