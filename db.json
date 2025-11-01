@@ -8,7 +8,7 @@
       "category": "clothing",
       "image": ["/assets/images/msi.png", "assets/images/msi-white.jfif", "assets/images/msi-double.png"],
       "rate": 4.6,
-      "be": false
+      "quantity": 1
     },
     {
       "id": 2,
@@ -18,7 +18,8 @@
       "category": "electronics",
       "image": ["assets/images/display.jfif", "assets/images/display-white.png"],
       "rate": 4.8,
-      "be": false
+      "quantity": 1
+
     },
     {
       "id": 3,
@@ -28,7 +29,8 @@
       "category": "accessories",
       "image": ["assets/images/cool-display.png", "assets/images/cool-display2.png"],
       "rate": 4.5,
-      "be": false
+      "quantity": 1
+
     },
     {
       "id": 4,
@@ -38,7 +40,8 @@
       "category": "electronics",
       "image": ["assets/images/nout.png", "assets/images/nout-green.png"],
       "rate": 4.3,
-      "be": false
+      "quantity": 1
+     
     },
     {
       "id": 5,
@@ -48,7 +51,8 @@
       "category": "shoes",
       "image": ["/assets/images/msi.png", "assets/images/msi-white.jfif", "assets/images/msi-double.png"],
       "rate": 4.7,
-      "be": false
+      "quantity": 1
+   
     },
     {
       "id": 6,
@@ -58,7 +62,8 @@
       "category": "clothing",
       "image": ["assets/images/monitor.png","assets/images/monitor-dragon.png" ],
       "rate": 4.4,
-      "be": false
+      "quantity": 1
+     
     },
     {
       "id": 7,
@@ -68,7 +73,8 @@
       "category": "accessories",
       "image": ["assets/images/monitor.png","assets/images/monitor-dragon.png" ],
       "rate": 4.6,
-      "be": false
+      "quantity": 1
+      
     },
     {
       "id": 8,
@@ -78,7 +84,8 @@
       "category": "home",
       "image": ["assets/images/monitor.png","assets/images/monitor-dragon.png" ],
       "rate": 4.2,
-      "be": false
+      "quantity": 1
+     
     }
   ]
 }

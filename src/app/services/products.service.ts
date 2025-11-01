@@ -22,10 +22,7 @@ export class ProductsService {
   }
 
 
-  changeProduct(product: IProduct) {
-    return this.http.put<IProduct>(`${this.apiUrl}/${product.id}`, product);
-  }
-
+ 
 
 
 }

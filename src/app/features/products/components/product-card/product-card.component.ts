@@ -13,30 +13,27 @@ import { ProductsService } from '../../../../services/products.service';
 })
 export class ProductCardComponent {
   productsService = inject(ProductsService)
-    @Input() product!: IProduct
-    products = signal<IProduct[]>([])
+    @Input() product!: IProduct;
+    cart = signal<IProduct[]>([]);
 
   
 
-    getProducts () {
-        this.productsService.getProducts().subscribe((res: IProduct[]) => {
-          this.products.set(res) 
-        })
-    }
     
-    addProductToBucket(id: number) {
-      
-      this.products.update(products =>
-        products.map(p =>
-          p.id === id ? { ...p, be: !p.be } : p
-        )
-      );
+    
+   addProductToBucket(product: IProduct) {
+  this.cart.update((currentCart) => {
+    const existingItem = currentCart.find((i) => i.id === product.id);
 
-    
-      this.productsService.changeProduct(this.products()[id]).subscribe(res => {
-        console.log('Updated product:', res);
-      });
-    
+    if (existingItem) {
+      existingItem.quantity += product.quantity;
+    } else {
+      currentCart.push(product);
     }
+
+    console.log('Cart inside update:', currentCart); 
+    return currentCart;
+  });
+}
+
     
 }
