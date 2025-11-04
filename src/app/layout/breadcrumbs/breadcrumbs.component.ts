@@ -35,6 +35,7 @@ export class BreadcrumbsComponent {
         const breadcrumbs: { label: string, url: string }[] = [];
         breadcrumbs.push({ label: 'Products', url: '/' });
         breadcrumbs.push({ label: product.title, url: `/products/${product.id}` });
+        breadcrumbs.push({ label: product.title, url: `/cart` });
         this.breadcrumbs = breadcrumbs;
       });
     } else {

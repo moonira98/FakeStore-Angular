@@ -36,4 +36,13 @@ export class CartService {
     const saved = localStorage.getItem(CART_STORE)
     return saved ? JSON.parse(saved) : []
   }
+
+  removeProduct(productId: number) {
+    this.cart.update((currenCart) => {
+      const updatedCart = currenCart.filter((p) => p.id !== productId)
+      this.saveToCart(updatedCart)
+      return updatedCart
+
+    })
+  }
 }

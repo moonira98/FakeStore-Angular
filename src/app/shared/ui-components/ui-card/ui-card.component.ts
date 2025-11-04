@@ -23,6 +23,7 @@ export class UiCardComponent {
 
   @Input() title!: string;
   @Input() price!: number;
+  @Input() quantity?: number
   @Input() description?: string;
   @Input() category?: string;
   @Input() image!: string[];

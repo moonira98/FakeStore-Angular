@@ -1,13 +1,17 @@
 .card { 
     margin: 0 auto; 
     padding: 3rem; 
-    width: 1280px; 
+    width: 1280px;
+    box-sizing: border-box; 
     
     
     &__wrapper { 
         display: flex; 
         justify-content: space-between; 
-        flex-wrap: wrap; 
-        gap: 25px; 
+        flex-wrap: wrap;
+        gap: 10px;
     } 
+}
+.a{
+    width: 24%;
 }

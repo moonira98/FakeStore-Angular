@@ -1,0 +1,19 @@
+<div class="cart">
+    
+        <h1>Shopping cart</h1>
+        <div class="cart__content">
+           @if(cart().length) {
+            @for(product of cart(); track product.id) {
+                <div class="cart__box" >
+                    <img [src]="product.image[0]">
+                    <p>{{product.description}}</p>
+                    <span>{{product.price}}</span>
+                    <button (click)="removeProduct(product.id)" >Remove</button>
+                </div>
+            }
+           }
+        
+        </div>
+   
+   
+</div>
